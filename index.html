@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Float Testing</title>
+  </head>
+  <body>
+    <div class="flex-bx">
+      <div class="item item-1">
+        <div class="container clearfix">
+          <h2>This two blocks are going to float</h2>
+          <div class="blk first">First Block</div>
+          <div class="blk second">Second Block</div>
+        </div>
+        <p class="paragraph aft-el">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          laborum nesciunt ducimus omnis architecto. Ex labore rem dignissimos
+          voluptatem id nihil ea corrupti quae sunt error blanditiis accusamus
+          cum vel illo repellendus eaque nobis alias, harum quaerat consequuntur
+          nostrum! Deleniti eius sint est ipsa maiores culpa ex dolores ducimus
+          provident debitis libero, animi autem, accusantium eligendi cumque
+          mollitia doloribus eaque quidem. Quos, ab. Qui ratione sint animi
+          nostrum ducimus consectetur ad delectus provident itaque, natus quidem
+          at est deleniti illum culpa quos sapiente, magnam voluptate sed
+          pariatur! Quas ad repellat, atque autem corporis porro sequi,
+          distinctio nihil numquam cumque dolorum.
+        </p>
+        <h2 class="heading aft-el">
+          Natural flow content after float elements
+        </h2>
+        <div class="blk check">Check</div>
+      </div>
+      <div class="item item-2">
+        <button class="btn nat-flow">Natural Flow</button>
+        <button class="btn float-p">Try Float with p</button>
+        <button class="btn float-h2">Try Float with h2</button>
+        <button class="btn clear-sibling">Clearfix Sibling</button>
+        <button class="btn clear-parent">Clearfix Parent</button>
+        <button class="btn key-point">Take Away</button>
+      </div>
+      <div class="item item-3">
+        <p class="text"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

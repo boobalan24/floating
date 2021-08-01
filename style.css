@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+/*Utility Class*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block; /*You can use display:table*/
+}
+
+.remove-float {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+
+/*Flex box designing*/
+
+.flex-bx {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px #666;
+}
+.item-1 {
+  background-color: #fdefef;
+  padding: 10px;
+  flex-basis: 600px;
+}
+.item-2 {
+  background-color: #fde49c;
+}
+.item-3 {
+  background-color: #c2ffd9;
+  flex-basis: 300px;
+}
+h2 {
+  text-transform: uppercase;
+  color: #035397;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.blk {
+  height: 110px;
+  width: 110px;
+  padding: 3px 6px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-family: inherit;
+  margin: 2px;
+  border-radius: 3px;
+}
+.first {
+  background-color: red;
+  float: left;
+}
+.second {
+  background-color: blue;
+  float: left;
+}
+
+.check {
+  background-color: orange;
+}
+.text {
+  font-size: 19px;
+  color: #222;
+}
+.btn {
+  display: block;
+  padding: 5px 10px;
+  margin: 20px auto;
+  width: 151.42px;
+  background-color: #f87a7a;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 1.5px 3px #888;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  background-color: #fe9898;
+  transform: translateY(-1.5px);
+  cursor: pointer;
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px #888;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-bx {
+    flex-direction: column;
+  }
+}
