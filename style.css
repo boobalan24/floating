@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/*Utility Class*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block; /*You can use display:table*/
+}
+.flex-bx {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.item-1 {
+  background-color: #fdefef;
+  padding: 10px;
+}
+.item-2 {
+  background-color: #fde49c;
+  padding: 10px;
+}
+.item-3 {
+  background-color: #c2ffd9;
+  flex-basis: 300px;
+  padding: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  color: #035397;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.blk {
+  height: 110px;
+  width: 110px;
+  padding: 3px 6px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-family: inherit;
+}
+.first {
+  background-color: red;
+  float: left;
+}
+.second {
+  background-color: blue;
+  float: left;
+}
+
+.remove-float {
+  clear: both;
+}
+.check {
+  background-color: orange;
+}
+.text {
+  font-size: 20px;
+  color: #222;
+}
+.btn {
+  display: block;
+  padding: 5px 10px;
+  margin: 10px;
+  width: 151.42px;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-bx {
+    flex-direction: column;
+  }
+}
